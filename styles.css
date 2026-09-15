@@ -6,7 +6,7 @@ form.addEventListener("submit", async (event) => {
 
   const emailTarget = form.action.split("/").pop();
 
-  if (emailTarget === "YOUR_EMAIL_ADDRESS") {
+  if (emailTarget === "jagadeesh.a3850@gmail.com") {
     status.textContent = "Please add your email address in index.html.";
     return;
   }
