@@ -1,1 +1,39 @@
-<form id="message-form" action="https://formsubmit.co/jagadeesh.a3850@gmail.com" method="POST">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Search</h1>
+
+      <!-- Replace YOUR_EMAIL_ADDRESS with your own email -->
+      <form id="message-form" action="https://formsubmit.co/YOUR_EMAIL_ADDRESS" method="POST">
+        <input type="hidden" name="_subject" value="New website submission" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label class="sr-only" for="search-text">Enter your message</label>
+
+        <div class="search-box">
+          <span>🔍</span>
+          <input
+            id="search-text"
+            name="message"
+            type="search"
+            placeholder="Search or enter a message"
+            required
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
